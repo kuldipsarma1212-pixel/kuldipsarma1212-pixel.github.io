@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuldip Sarma</title>
+<meta name="description" content="Kuldip Sarma — mathematics student, tutor, and digital creator.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy:      #0B2036;
+    --navy-deep: #081726;
+    --gold:      #D9A441;
+    --cream:     #F4E7C8;
+    --ink:       #1C2B3A;
+    --slate:     #5B6B7C;
+    --rule:      #DCCBA0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 90px 0 70px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* A quiet mathematical motif behind the name — a single sine-like
+     curve, echoing "graphs" without being a literal chart. */
+  .hero svg.curve {
+    position: absolute;
+    right: -60px;
+    bottom: -40px;
+    width: 340px;
+    height: 340px;
+    opacity: 0.5;
+  }
+
+  .hero .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    margin: 10px 0 14px;
+  }
+
+  .hero p.tagline {
+    font-size: 1.1rem;
+    max-width: 46ch;
+    color: #D8CFB6;
+  }
+
+  .hero nav {
+    margin-top: 36px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .hero nav a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+  .hero nav a:hover { border-bottom-color: var(--gold); }
+
+  /* ---------- Sections ---------- */
+
+  section.block {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section.block:last-of-type { border-bottom: none; }
+
+  .num {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  section.block h2 {
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+  }
+
+  section.block p {
+    max-width: 60ch;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+
+  .pillars {
+    display: grid;
+    gap: 22px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: 640px) {
+    .pillars { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .pillar h3 {
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .pillar p {
+    font-size: 0.92rem;
+    color: var(--slate);
+  }
+
+  .tutor-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  .tutor-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+  }
+  .tutor-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .tutor-list .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--navy);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  .cta:hover { background: var(--navy-deep); }
+
+  .bishleshon-card {
+    margin-top: 24px;
+    background: var(--navy);
+    color: var(--cream);
+    padding: 28px;
+    border-radius: 6px;
+  }
+  .bishleshon-card .mark {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .bishleshon-card p {
+    color: #D8CFB6;
+    max-width: 55ch;
+  }
+  .bishleshon-card a {
+    color: var(--gold);
+    text-decoration: underline;
+  }
+
+  footer {
+    background: var(--navy);
+    color: #B9C4C2;
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 0.85rem;
+  }
+  footer a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Tezpur University</span>
+    <h1>Kuldip Sarma</h1>
+    <p class="tagline">Mathematics student, tutor, and digital creator — building things out of both proofs and pixels.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tutoring">Tutoring</a>
+      <a href="#bishleshon">Bishleshon</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Decorative curve — pure SVG, no images needed -->
+  <svg class="curve" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M0 200 C 60 100, 100 300, 170 180 S 280 60, 340 160"
+          fill="none" stroke="#D9A441" stroke-width="2"/>
+    <path d="M0 260 C 70 180, 110 340, 190 240 S 300 140, 340 220"
+          fill="none" stroke="#D9A441" stroke-width="1" opacity="0.5"/>
+  </svg>
+</header>
+
+<main class="wrap">
+
+  <section class="block" id="about">
+    <span class="num">§1</span>
+    <h2>About</h2>
+    <p>I'm a student in the Integrated MSc Mathematics program at Tezpur University, currently in my fifth semester. My coursework covers combinatorics, differential equations, numerical methods, and engineering mechanics — and I'm preparing for the ISI Kolkata MSQMS entrance exam alongside it.</p>
+    <p>Outside coursework, I tutor students and run a bilingual science-and-analysis project on Instagram. Three things I keep coming back to:</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Mathematics</h3>
+        <p>Drawn especially to combinatorics and differential equations — the kind of problems with a clean trick hiding inside them.</p>
+      </div>
+      <div class="pillar">
+        <h3>Digital creation</h3>
+        <p>I make short-form video content that explains geopolitical, social, and scientific ideas in Assamese.</p>
+      </div>
+      <div class="pillar">
+        <h3>Tutoring</h3>
+        <p>I help students build genuine understanding, not just exam answers — from school-level maths up to entrance-exam level.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="tutoring">
+    <span class="num">§2</span>
+    <h2>Tutoring</h2>
+    <p>I tutor mathematics at two levels, depending on where a student is:</p>
+
+    <ul class="tutor-list">
+      <li>
+        <span class="tag">SCHOOL</span>
+        <span>School-level mathematics — building solid fundamentals, closing gaps, and making problem-solving feel less intimidating.</span>
+      </li>
+      <li>
+        <span class="tag">ENTRANCE</span>
+        <span>Competitive/entrance-exam mathematics — the kind of problem-solving speed and rigor that exams like ISI's require.</span>
+      </li>
+    </ul>
+
+    <a class="cta" href="mailto:kuldipsarma62@gmail.com?subject=Tutoring%20inquiry">Get in touch about tutoring</a>
+  </section>
+
+  <section class="block" id="bishleshon">
+    <span class="num">§3</span>
+    <h2>Bishleshon</h2>
+    <p>Bishleshon — "analysis," in Assamese and Bengali — is a project I run on Instagram, breaking down geopolitical, social, and scientific topics for an Assamese-speaking audience.</p>
+
+    <div class="bishleshon-card">
+      <div class="mark">@bishleshon.space</div>
+      <p>Currently in its early stages, with new content and visuals in progress. Follow along as it grows.</p>
+      <p><a href="https://instagram.com/bishleshon.space" target="_blank" rel="noopener">instagram.com/bishleshon.space →</a></p>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <span class="num">§4</span>
+    <h2>Contact</h2>
+    <p>The most reliable way to reach me is by email — whether that's about tutoring, Bishleshon, or anything else.</p>
+    <a class="cta" href="mailto:kuldipsarma62@gmail.com">kuldipsarma62@gmail.com</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>Kuldip Sarma — Tezpur University</p>
+</footer>
+
+</body>
+</html>
