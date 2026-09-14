@@ -3,381 +3,655 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bishleshon Education — Maths Tutor (Classes 8–11) | Kuldip Sarma</title>
-<meta name="description" content="Maths tutoring for classes 8–11 by Kuldip Sarma. Clear, step-by-step explanations. Free demo class. Admissions open.">
+<title>Study Portal — Bishleshon Education | Kuldip Sarma</title>
+<meta name="description" content="Videos, notes and practice for CBSE / State board maths, classes 8–11. Organised by class and by topic.">
 <meta name="theme-color" content="#0B2036">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bishleshon Education — Maths Tutor">
-<meta property="og:description" content="Maths tutoring for classes 8–11. Free demo class.">
-<meta property="og:url" content="https://kuldipsarma1212-pixel.github.io/">
-<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kuldip Sarma",
-  "jobTitle": "Mathematics Tutor",
-  "email": "kuldipsarma62@gmail.com",
-  "telephone": "+916002807252",
-  "url": "https://kuldipsarma1212-pixel.github.io/",
-  "knowsAbout": ["Mathematics", "Combinatorics", "Differential Equations"],
-  "sameAs": ["https://www.youtube.com/@villagersmaths"]
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0B2036;--navy-deep:#081726;--navy-mid:#163354;--gold:#D9A441;--gold-soft:#E8C177;--cream:#F4E7C8;--cream-2:#FBF5E4;--ink:#1C2B3A;--slate:#5B6B7C;--rule:#DCCBA0;--good:#3F7A5B;--bad:#B24B3C;--wa:#25D366;--wa-dark:#1EBE5B}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
-h1,h2,h3{font-family:'Lora',serif;font-weight:600;line-height:1.2}
-a{color:inherit}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.skip-link{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--navy);padding:10px 16px;z-index:200;text-decoration:none}
-.skip-link:focus{left:0}
-.hero{background:var(--navy);color:var(--cream);padding:80px 0 90px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(217,164,65,.18) 1px,transparent 1px);background-size:22px 22px;opacity:.55;pointer-events:none}
-.hero-top{display:flex;align-items:center;gap:16px;margin-bottom:22px;position:relative;z-index:2}
-.hero-top .mark{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:'Lora',serif;font-weight:700;font-size:1.4rem;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(217,164,65,.15)}
-.hero-top .brand{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--gold);letter-spacing:.05em;text-transform:uppercase}
-.hero h1{font-size:clamp(2.2rem,6vw,3.4rem);margin-bottom:14px;position:relative;z-index:2}
-.hero p.tagline{font-size:1.12rem;max-width:48ch;color:#D8CFB6;position:relative;z-index:2}
-.hero nav.hero-nav{margin-top:36px;display:flex;gap:22px;flex-wrap:wrap;position:relative;z-index:2}
-.hero nav.hero-nav a{text-decoration:none;font-size:.95rem;border-bottom:1px solid transparent;padding-bottom:2px}
-.hero nav.hero-nav a:hover{border-bottom-color:var(--gold)}
-.enrol-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(217,164,65,.12);border:1px solid rgba(217,164,65,.4);color:var(--gold-soft);padding:6px 14px;border-radius:100px;font-size:.82rem;margin-bottom:22px;position:relative;z-index:2;font-family:'JetBrains Mono',monospace}
-.enrol-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(217,164,65,.7)}70%{box-shadow:0 0 0 10px rgba(217,164,65,0)}100%{box-shadow:0 0 0 0 rgba(217,164,65,0)}}
-@media (prefers-reduced-motion:reduce){.enrol-badge .dot{animation:none}}
-.hero svg.curve{position:absolute;right:-60px;bottom:-40px;width:380px;height:380px;opacity:.35;pointer-events:none}
-.hero-formulas{position:absolute;right:40px;top:60px;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:rgba(217,164,65,.35);text-align:right;line-height:2;pointer-events:none;z-index:1}
-@media (max-width:700px){.hero-formulas{display:none}}
-.menu-btn{position:fixed;top:20px;right:20px;z-index:120;width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--cream);border:1px solid rgba(217,164,65,.4);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:background .2s,transform .2s}
-.menu-btn:hover{background:var(--navy-mid);transform:scale(1.05)}
-.menu-btn svg{width:22px;height:22px}
-.menu-panel{position:fixed;top:78px;right:20px;z-index:119;background:var(--navy);border:1px solid rgba(217,164,65,.35);border-radius:12px;min-width:220px;padding:8px;box-shadow:0 20px 40px rgba(0,0,0,.35);opacity:0;transform:translateY(-8px) scale(.97);pointer-events:none;transition:opacity .18s,transform .18s}
-.menu-panel.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
-.menu-panel a{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;color:var(--cream);text-decoration:none;font-size:.94rem;transition:background .15s,color .15s}
-.menu-panel a:hover{background:rgba(217,164,65,.14);color:var(--gold-soft)}
-.menu-panel a .ico{width:18px;height:18px;flex:0 0 auto;color:var(--gold)}
-.menu-panel hr{border:none;border-top:1px solid rgba(217,164,65,.18);margin:6px 8px}
-.menu-panel .menu-wa{color:var(--wa)}
-.menu-panel .menu-wa .ico{color:var(--wa)}
-.menu-panel .menu-wa:hover{background:rgba(37,211,102,.14);color:var(--wa)}
-section.block{padding:70px 0;border-bottom:1px solid var(--rule)}
-section.block:last-of-type{border-bottom:none}
-.num{font-family:'JetBrains Mono',monospace;color:var(--gold);font-size:.9rem;display:block;margin-bottom:8px}
-section.block h2{font-size:1.75rem;margin-bottom:18px}
-section.block p{max-width:62ch;margin-bottom:14px}
-.divider{display:flex;align-items:center;gap:12px;margin:32px 0;color:var(--gold)}
-.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(to right,transparent,var(--rule),transparent)}
-.divider svg{width:20px;height:20px}
-.pillars{display:grid;gap:22px;margin-top:28px}
-@media (min-width:640px){.pillars{grid-template-columns:repeat(2,1fr)}}
-.pillar{background:#fff;padding:24px;border-radius:10px;border:1px solid var(--rule);transition:transform .2s,box-shadow .2s}
-.pillar:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(11,32,54,.08)}
-.pillar .pillar-ico{width:40px;height:40px;margin-bottom:14px;color:var(--navy)}
-.pillar h3{font-size:1.05rem;color:var(--navy);margin-bottom:6px}
-.pillar p{font-size:.92rem;color:var(--slate)}
-.tutor-list{list-style:none;margin-top:20px}
-.tutor-list li{padding:16px 0;border-top:1px solid var(--rule);display:flex;gap:18px;align-items:baseline}
-.tutor-list li:last-child{border-bottom:1px solid var(--rule)}
-.tutor-list .tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--gold);white-space:nowrap;letter-spacing:.05em;min-width:90px}
-.cta{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:var(--navy);color:var(--cream);text-decoration:none;padding:13px 24px;border-radius:6px;font-size:.95rem;border:none;cursor:pointer;font-family:inherit;font-weight:500;transition:background .2s,transform .15s}
-.cta:hover{background:var(--navy-deep);transform:translateY(-1px)}
-.cta svg{width:16px;height:16px}
-.cta.cta-wa{background:var(--wa);color:#fff}
-.cta.cta-wa:hover{background:var(--wa-dark)}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.admission-card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:30px 26px;margin-top:24px;box-shadow:0 10px 30px rgba(11,32,54,.05);position:relative;overflow:hidden}
-.admission-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-soft),var(--gold))}
-.admission-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:6px}
-.admission-card .sub{font-size:.9rem;color:var(--slate);margin-bottom:22px}
-form#admission-form{display:grid;gap:16px}
-.form-row{display:grid;gap:16px}
-@media (min-width:560px){.form-row.two{grid-template-columns:1fr 1fr}}
-form#admission-form label{display:block;font-size:.84rem;color:var(--slate);margin-bottom:6px;font-weight:500}
-form#admission-form .req{color:var(--bad)}
-form#admission-form input,form#admission-form textarea,form#admission-form select{width:100%;font-family:inherit;font-size:.95rem;padding:11px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--cream-2);color:var(--ink);transition:border-color .15s,background .15s}
-form#admission-form input:focus,form#admission-form textarea:focus,form#admission-form select:focus{background:#fff;border-color:var(--gold)}
-form#admission-form textarea{resize:vertical;min-height:90px}
-.hp-field{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
-#form-status{font-size:.9rem;margin-top:4px}
-#form-status.success{color:var(--good);font-weight:500}
-#form-status.error{color:var(--bad);font-weight:500}
-#submit-btn:disabled{opacity:.6;cursor:not-allowed}
-.form-note{font-size:.8rem;color:var(--slate);margin-top:8px;text-align:center}
-.video-frame{position:relative;width:100%;padding-bottom:56.25%;margin-top:24px;border-radius:8px;overflow:hidden;background:var(--navy);box-shadow:0 14px 34px rgba(11,32,54,.12)}
-.video-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.channel-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:.95rem;color:var(--navy);text-decoration:underline}
-.future-note{margin-top:18px;font-size:.85rem;color:var(--slate);border-left:3px solid var(--gold);padding-left:12px}
-footer.site-footer{background:var(--navy);color:#B9C4C2;padding:46px 24px 34px;font-size:.88rem;position:relative;overflow:hidden}
-footer.site-footer::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(217,164,65,.12) 1px,transparent 1px);background-size:24px 24px;opacity:.6;pointer-events:none}
-.footer-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
-.footer-brand{font-family:'Lora',serif;font-size:1.15rem;color:var(--cream)}
-.footer-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-.footer-links a{color:#B9C4C2;text-decoration:none;border-bottom:1px solid transparent}
-.footer-links a:hover{color:var(--gold-soft);border-bottom-color:var(--gold)}
-.footer-copy{font-size:.78rem;opacity:.7;font-family:'JetBrains Mono',monospace}
+  :root{
+    --navy-deep:#0B2036;
+    --navy-panel:#12283F;
+    --navy-panel-2:#0E2338;
+    --navy-line:#26415C;
+    --chalk:#F3EFE4;
+    --chalk-dim:#A9B9C9;
+    --gold:#D9B44A;
+    --gold-dim:#8C7332;
+    --teal:#59C7B8;
+    --red-flag:#D9704F;
+    --serif:'Source Serif 4', Georgia, serif;
+    --sans:'Inter', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--navy-deep);
+    color:var(--chalk);
+    font-family:var(--sans);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0 0 .4em;color:var(--chalk);}
+  h2{font-size:clamp(1.5rem,3vw,2rem);}
+  h3{font-size:1.05rem;font-weight:600;}
+  p{color:var(--chalk-dim);}
+  .eyebrow-mark{
+    font-family:var(--serif);
+    font-style:italic;
+    color:var(--gold-dim);
+    font-size:.95rem;
+    display:block;
+    margin-bottom:.5em;
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:40;
+    background:rgba(11,32,54,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--navy-line);
+  }
+  .topbar-inner{
+    max-width:1080px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    flex-wrap:wrap;
+  }
+  .brand{font-family:var(--serif);font-weight:600;font-size:1.05rem;text-decoration:none;color:var(--chalk);}
+  .brand span{color:var(--gold);}
+  .toplinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;}
+  .toplinks a{text-decoration:none;color:var(--chalk-dim);border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s,border-color .15s;}
+  .toplinks a:hover{color:var(--chalk);border-color:var(--gold-dim);}
+
+  /* ---------- hero ---------- */
+  .hero{padding:64px 0 40px;border-bottom:1px solid var(--navy-line);position:relative;overflow:hidden;}
+  .hero-eq{
+    position:absolute;font-family:var(--serif);font-style:italic;color:var(--navy-line);
+    font-size:2.4rem;opacity:.55;pointer-events:none;user-select:none;
+  }
+  .hero h1{font-size:clamp(1.9rem,4.2vw,2.7rem);max-width:16ch;position:relative;}
+  .hero p{max-width:52ch;font-size:1.05rem;position:relative;}
+  .hero-back{
+    font-size:.88rem;text-decoration:none;color:var(--chalk-dim);
+    display:inline-flex;align-items:center;gap:6px;margin-bottom:22px;
+    border:1px solid var(--navy-line);padding:6px 12px;border-radius:3px;
+  }
+  .hero-back:hover{border-color:var(--gold-dim);color:var(--chalk);}
+
+  /* ---------- section shell ---------- */
+  .section{padding:56px 0;border-bottom:1px solid var(--navy-line);}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px;}
+  .section-head p{margin:0;max-width:46ch;}
+
+  /* ---------- filter controls (shared) ---------- */
+  .filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;}
+  .filter-group{display:flex;gap:8px;flex-wrap:wrap;}
+  .chip{
+    font-family:var(--sans);font-size:.85rem;font-weight:500;
+    background:transparent;color:var(--chalk-dim);
+    border:1px solid var(--navy-line);border-radius:999px;
+    padding:7px 15px;cursor:pointer;transition:.15s;
+  }
+  .chip:hover{border-color:var(--gold-dim);color:var(--chalk);}
+  .chip.active{background:var(--gold);border-color:var(--gold);color:#1A1204;font-weight:600;}
+  .chip.topic.active{background:var(--teal);border-color:var(--teal);color:#08211D;}
+  .filter-divider{width:1px;background:var(--navy-line);margin:2px 4px;}
+
+  /* ---------- video grid ---------- */
+  .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;}
+  .vcard{background:var(--navy-panel);border:1px solid var(--navy-line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;}
+  .vthumb{position:relative;aspect-ratio:16/9;background:var(--navy-panel-2);cursor:pointer;}
+  .vthumb img{width:100%;height:100%;object-fit:cover;}
+  .vthumb .play{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,0));
+  }
+  .play svg{width:44px;height:44px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));}
+  .vbody{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column;gap:8px;}
+  .vtags{display:flex;gap:6px;flex-wrap:wrap;}
+  .tag{font-size:.72rem;font-weight:600;padding:2px 9px;border-radius:999px;letter-spacing:.01em;}
+  .tag.cls{background:rgba(217,180,74,.15);color:var(--gold);}
+  .tag.topic{background:rgba(89,199,184,.15);color:var(--teal);}
+  .vtitle{font-size:.95rem;font-weight:600;color:var(--chalk);margin:0;}
+  .vmeta{font-size:.8rem;color:var(--chalk-dim);margin:0;}
+  .empty-note{color:var(--chalk-dim);font-size:.92rem;border:1px dashed var(--navy-line);border-radius:6px;padding:22px;text-align:center;}
+
+  /* ---------- notes ---------- */
+  .notes-groups{display:flex;flex-direction:column;gap:14px;}
+  .note-group{background:var(--navy-panel);border:1px solid var(--navy-line);border-radius:6px;overflow:hidden;}
+  .note-group summary{
+    list-style:none;cursor:pointer;padding:16px 18px;
+    display:flex;align-items:center;justify-content:space-between;
+    font-family:var(--serif);font-weight:600;font-size:1.05rem;
+  }
+  .note-group summary::-webkit-details-marker{display:none;}
+  .note-group summary .chevron{font-family:var(--sans);color:var(--gold);transition:transform .18s;}
+  .note-group[open] summary .chevron{transform:rotate(90deg);}
+  .note-rows{border-top:1px solid var(--navy-line);}
+  .note-row{
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:13px 18px;border-bottom:1px solid var(--navy-line);
+    font-size:.92rem;
+  }
+  .note-row:last-child{border-bottom:none;}
+  .note-left{display:flex;align-items:center;gap:12px;min-width:0;}
+  .note-icon{color:var(--gold);flex-shrink:0;}
+  .note-name{color:var(--chalk);font-weight:500;}
+  .note-download{
+    text-decoration:none;font-size:.82rem;font-weight:600;color:var(--navy-deep);
+    background:var(--gold);padding:6px 13px;border-radius:4px;white-space:nowrap;flex-shrink:0;
+  }
+  .note-download:hover{background:#EAC968;}
+
+  /* ---------- practice / quiz ---------- */
+  .quiz-picker{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px;}
+  select.quiz-select{
+    background:var(--navy-panel);color:var(--chalk);border:1px solid var(--navy-line);
+    border-radius:4px;padding:9px 12px;font-family:var(--sans);font-size:.9rem;
+  }
+  .quiz-box{background:var(--navy-panel);border:1px solid var(--navy-line);border-radius:6px;padding:26px;}
+  .qnum{font-family:var(--serif);font-style:italic;color:var(--gold-dim);font-size:.9rem;margin-bottom:8px;}
+  .qtext{font-size:1.05rem;color:var(--chalk);margin-bottom:18px;}
+  .qoptions{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;}
+  .qoption{
+    text-align:left;background:transparent;border:1px solid var(--navy-line);color:var(--chalk-dim);
+    padding:11px 14px;border-radius:4px;cursor:pointer;font-family:var(--sans);font-size:.92rem;transition:.15s;
+  }
+  .qoption:hover{border-color:var(--gold-dim);color:var(--chalk);}
+  .qoption.correct{border-color:var(--teal);color:var(--teal);background:rgba(89,199,184,.08);}
+  .qoption.wrong{border-color:var(--red-flag);color:var(--red-flag);background:rgba(217,112,79,.08);}
+  .qfeedback{font-size:.88rem;color:var(--chalk-dim);min-height:1.4em;margin-bottom:16px;}
+  .qfooter{display:flex;justify-content:space-between;align-items:center;}
+  .qscore{font-size:.85rem;color:var(--chalk-dim);}
+  .btn{
+    font-family:var(--sans);font-size:.88rem;font-weight:600;
+    background:var(--gold);color:var(--navy-deep);border:none;
+    padding:10px 20px;border-radius:4px;cursor:pointer;
+  }
+  .btn:hover{background:#EAC968;}
+  .btn.ghost{background:transparent;border:1px solid var(--navy-line);color:var(--chalk);}
+  .btn.ghost:hover{border-color:var(--gold-dim);}
+  .btn:disabled{opacity:.4;cursor:default;}
+
+  /* ---------- doubts ---------- */
+  .doubt-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;}
+  @media (max-width:760px){.doubt-layout{grid-template-columns:1fr;}}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:.85rem;color:var(--chalk-dim);margin-bottom:6px;}
+  .field input,.field select,.field textarea{
+    width:100%;background:var(--navy-panel);border:1px solid var(--navy-line);color:var(--chalk);
+    padding:11px 12px;border-radius:4px;font-family:var(--sans);font-size:.92rem;
+  }
+  .field textarea{resize:vertical;min-height:100px;}
+  .doubt-side{background:var(--navy-panel);border:1px solid var(--navy-line);border-radius:6px;padding:22px;}
+  .doubt-side h3{color:var(--gold);}
+  .doubt-side ul{padding-left:18px;margin:0;color:var(--chalk-dim);font-size:.9rem;}
+  .doubt-side li{margin-bottom:8px;}
+
+  footer{padding:34px 0;text-align:center;}
+  footer p{font-size:.85rem;color:var(--chalk-dim);}
+  footer a{text-decoration:none;color:var(--chalk-dim);margin:0 8px;}
+  footer a:hover{color:var(--gold);}
 </style>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
-<button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
-<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
-</button>
-<nav class="menu-panel" id="menu-panel" aria-label="Site menu">
-<a href="#about">About</a>
-<a href="#tutoring">Tutoring</a>
-<a href="#interested">I'm Interested</a>
-<a href="#fees">Fees &amp; Schedule</a>
-<a href="#study">Study Videos</a>
-<hr>
-<a href="https://wa.me/916002807252?text=Hi" target="_blank" rel="noopener" class="menu-wa">WhatsApp</a>
-<a href="mailto:kuldipsarma62@gmail.com">Email</a>
-</nav>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="./" class="brand">Bishleshon <span>Education</span></a>
+    <nav class="toplinks">
+      <a href="#videos">Videos</a>
+      <a href="#notes">Notes</a>
+      <a href="#practice">Practice</a>
+      <a href="#doubts">Ask a doubt</a>
+      <a href="index.html#interested">Book a demo</a>
+    </nav>
+  </div>
+</div>
+
 <header class="hero">
-<div class="wrap">
-<div class="enrol-badge"><span class="dot"></span>Admissions open — Classes 8 to 11</div>
-<div class="hero-top">
-<span class="mark" aria-hidden="true">K</span>
-<span class="brand">Bishleshon — Education</span>
-</div>
-<h1>Bishleshon Education</h1>
-<p class="tagline">Maths tutoring for classes 8–11 by Kuldip Sarma — clear explanations, one step at a time.</p>
-<nav class="hero-nav" aria-label="Quick links">
-<a href="#about">About</a>
-<a href="#tutoring">Tutoring</a>
-<a href="#interested">I'm Interested</a>
-<a href="#fees">Fees</a>
-<a href="#study">Study</a>
-</nav>
-</div>
-<div class="hero-formulas" aria-hidden="true">
-<div>&int; f(x) dx</div>
-<div>a&sup2; + b&sup2; = c&sup2;</div>
-<div>n! / (n&minus;k)!</div>
-<div>dy/dx</div>
-</div>
-<svg class="curve" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M0 200 C 60 100, 100 300, 170 180 S 280 60, 340 160" fill="none" stroke="#D9A441" stroke-width="2"/>
-<path d="M0 260 C 70 180, 110 340, 190 240 S 300 140, 340 220" fill="none" stroke="#D9A441" stroke-width="1" opacity="0.5"/>
-</svg>
+  <span class="hero-eq" style="top:10%;right:6%;">∮ f dx</span>
+  <span class="hero-eq" style="bottom:8%;right:22%;font-size:1.6rem;">n(n+1)/2</span>
+  <div class="wrap">
+    <a href="./" class="hero-back">← Back to main site</a>
+    <span class="eyebrow-mark">§0 The Portal</span>
+    <h1>Everything for classes 8–11, in one place.</h1>
+    <p>Videos, notes and practice, sorted the way you actually look for them — by your class, or by the topic you're stuck on. Stuck on something specific? Ask below and I'll get back to you.</p>
+  </div>
 </header>
-<main id="main" class="wrap">
-<section class="block" id="about">
-<span class="num">&sect;1</span>
-<h2>About</h2>
-<p>I'm Kuldip Sarma — a mathematics student who also teaches, part-time. I enjoy working through problems, and I enjoy explaining them just as much: clearly, and one step at a time.</p>
-<div class="pillars">
-<div class="pillar">
-<svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h7"/><path d="M8 11h5"/><path d="M8 15h3"/></svg>
-<h3>Mathematics</h3>
-<p>Studying maths, with a particular interest in combinatorics and differential equations.</p>
-</div>
-<div class="pillar">
-<svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
-<h3>Teaching</h3>
-<p>Tutoring part-time, focused on clear explanations a student can actually follow.</p>
-</div>
-</div>
+
+<!-- ============ VIDEOS ============ -->
+<section class="section" id="videos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow-mark">§1 Watch</span>
+        <h2>Video library</h2>
+      </div>
+      <p>Full walkthroughs from the channel, tagged by class and topic. New uploads are added here first.</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group" id="classFilters" data-kind="class">
+        <button class="chip active" data-value="all">All classes</button>
+        <button class="chip" data-value="8">Class 8</button>
+        <button class="chip" data-value="9">Class 9</button>
+        <button class="chip" data-value="10">Class 10</button>
+        <button class="chip" data-value="11">Class 11</button>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group" id="topicFilters" data-kind="topic">
+        <button class="chip topic active" data-value="all">All topics</button>
+        <!-- topic chips injected by JS from video data -->
+      </div>
+    </div>
+
+    <div class="video-grid" id="videoGrid"></div>
+    <p class="empty-note" id="videoEmpty" style="display:none;">No videos yet for this class/topic — check back soon, or ask on WhatsApp and I'll prioritise it.</p>
+  </div>
 </section>
-<section class="block" id="tutoring">
-<span class="num">&sect;2</span>
-<h2>Tutoring</h2>
-<p>I tutor mathematics for classes 8, 9, 10, and 11, part-time — building solid fundamentals and working through problems step by step.</p>
-<div class="divider" aria-hidden="true">
-<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
-</div>
-<div class="cta-row">
-<a class="cta" href="#interested">I'm interested</a>
-<a class="cta cta-wa" href="https://wa.me/916002807252?text=Hi" target="_blank" rel="noopener">Chat on WhatsApp</a>
-</div>
+
+<!-- ============ NOTES ============ -->
+<section class="section" id="notes">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow-mark">§2 Download</span>
+        <h2>Notes &amp; worksheets</h2>
+      </div>
+      <p>PDF notes grouped by class. Each file is tagged with its topic so you can find it inside a class group too.</p>
+    </div>
+    <div class="notes-groups" id="notesGroups"></div>
+  </div>
 </section>
-<section class="block" id="interested">
-<span class="num">&sect;3</span>
-<h2>I'm Interested</h2>
-<p>Fill in the form below and I'll get back to you within a day to confirm your slot and schedule a free demo class.</p>
-<div class="admission-card">
-<h3>Interest Form</h3>
-<p class="sub">All fields marked <span class="req">*</span> are required.</p>
-<form id="admission-form" novalidate>
-<div class="form-row two">
-<div>
-<label for="student-name">Student's name <span class="req">*</span></label>
-<input type="text" id="student-name" name="student_name" required autocomplete="name">
-</div>
-<div>
-<label for="student-class">Class <span class="req">*</span></label>
-<select id="student-class" name="class" required>
-<option value="">Select class</option>
-<option value="Class 8">Class 8</option>
-<option value="Class 9">Class 9</option>
-<option value="Class 10">Class 10</option>
-<option value="Class 11">Class 11</option>
-</select>
-</div>
-</div>
-<div class="form-row two">
-<div>
-<label for="parent-name">Parent / guardian name</label>
-<input type="text" id="parent-name" name="parent_name" autocomplete="name">
-</div>
-<div>
-<label for="phone">Phone / WhatsApp <span class="req">*</span></label>
-<input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 XXXXX XXXXX">
-</div>
-</div>
-<div>
-<label for="email">Email (optional)</label>
-<input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
-</div>
-<div>
-<label for="subject">Subject / board</label>
-<input type="text" id="subject" name="subject" placeholder="e.g. Maths — CBSE Class 10">
-</div>
-<div>
-<label for="preferred-time">Preferred batch time</label>
-<select id="preferred-time" name="preferred_time">
-<option value="">Any / not sure</option>
-<option value="Weekdays 5-6 PM">Weekdays 5–6 PM</option>
-<option value="Weekdays 6-7 PM">Weekdays 6–7 PM</option>
-<option value="Weekdays 7-8 PM">Weekdays 7–8 PM</option>
-<option value="Weekend morning">Weekend morning</option>
-<option value="Weekend afternoon">Weekend afternoon</option>
-</select>
-</div>
-<div>
-<label for="message">Anything else? (optional)</label>
-<textarea id="message" name="message" placeholder="Weak topics, current marks, goals, etc."></textarea>
-</div>
-<input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="cta" type="submit" id="submit-btn">Submit interest form</button>
-<p id="form-status" role="status"></p>
-<p class="form-note">I'll reply within 24 hours. Your info stays private.</p>
-</form>
-</div>
+
+<!-- ============ PRACTICE ============ -->
+<section class="section" id="practice">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow-mark">§3 Practice</span>
+        <h2>Quick quizzes</h2>
+      </div>
+      <p>Pick a class and topic, then work through a short set of questions. Answers are marked instantly.</p>
+    </div>
+
+    <div class="quiz-picker">
+      <select class="quiz-select" id="quizClassSelect"></select>
+      <select class="quiz-select" id="quizTopicSelect"></select>
+    </div>
+
+    <div class="quiz-box" id="quizBox"></div>
+  </div>
 </section>
-<section class="block" id="fees">
-<span class="num">&sect;4</span>
-<h2>Fees &amp; Schedule</h2>
-<p>Transparent, simple pricing. First demo class is always free.</p>
-<ul class="tutor-list">
-<li><span class="tag">CLASSES</span><span>8, 9, 10, 11 — CBSE / State board</span></li>
-<li><span class="tag">FORMAT</span><span>1-on-1 or small group (max 4 students)</span></li>
-<li><span class="tag">TIMING</span><span>Weekdays 5–8 PM · Weekends 10 AM–1 PM</span></li>
-<li><span class="tag">FEES</span><span>Contact for current rates — first demo free</span></li>
-</ul>
-<div class="cta-row">
-<a class="cta" href="#interested">Book a free demo</a>
-<a class="cta cta-wa" href="https://wa.me/916002807252?text=Hi" target="_blank" rel="noopener">WhatsApp</a>
-</div>
+
+<!-- ============ DOUBTS ============ -->
+<section class="section" id="doubts" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow-mark">§4 Ask</span>
+        <h2>Ask a doubt</h2>
+      </div>
+      <p>Stuck on a specific problem? Send it across — a photo of your working helps a lot.</p>
+    </div>
+
+    <div class="doubt-layout">
+      <form id="doubtForm">
+        <div class="field">
+          <label for="dName">Your name *</label>
+          <input id="dName" type="text" required>
+        </div>
+        <div class="field">
+          <label for="dClass">Class *</label>
+          <select id="dClass" required>
+            <option value="">Select class</option>
+            <option>Class 8</option>
+            <option>Class 9</option>
+            <option>Class 10</option>
+            <option>Class 11</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dTopic">Topic (optional)</label>
+          <input id="dTopic" type="text" placeholder="e.g. quadratic equations">
+        </div>
+        <div class="field">
+          <label for="dQuestion">Your doubt *</label>
+          <textarea id="dQuestion" required placeholder="Describe where you're stuck. If it's from a textbook, mention the chapter and question number."></textarea>
+        </div>
+        <button type="submit" class="btn">Send on WhatsApp</button>
+        <button type="button" class="btn ghost" id="sendEmailBtn" style="margin-left:10px;">Send by email instead</button>
+      </form>
+
+      <aside class="doubt-side">
+        <h3>Before you send</h3>
+        <ul>
+          <li>Mention the class and chapter — it helps me answer faster.</li>
+          <li>If you can, attach a photo of the question and your attempt on WhatsApp.</li>
+          <li>I reply within a day, usually much sooner on weekdays.</li>
+          <li>General doubts are answered here for free — this isn't limited to tutoring students.</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
 </section>
-<section class="block" id="study">
-<span class="num">&sect;5</span>
-<h2>Study</h2>
-<p>Free maths videos and problem walkthroughs. New uploads appear here — subscribe to the channel to stay updated.</p>
-<div class="video-frame">
-<iframe src="https://www.youtube.com/embed/9wkN7pQH3_4" title="Maths video walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<a class="channel-link" href="https://www.youtube.com/@villagersmaths" target="_blank" rel="noopener">Visit the full channel &rarr;</a>
-<p class="future-note">More study material is being added. For now, the latest video appears here.</p>
-</section>
-</main>
-<footer class="site-footer">
-<div class="footer-inner">
-<div class="footer-brand">Bishleshon Education</div>
-<div class="footer-links">
-<a href="#about">About</a>
-<a href="#interested">I'm Interested</a>
-<a href="#study">Study</a>
-<a href="https://wa.me/916002807252" target="_blank" rel="noopener">WhatsApp</a>
-<a href="mailto:kuldipsarma62@gmail.com">Email</a>
-</div>
-<div class="footer-copy">&copy; 2026 Kuldip Sarma · Bishleshon Education</div>
-</div>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <a href="./#about">About</a> · <a href="./#interested">I'm interested</a> · <a href="#videos">Videos</a> · <a href="#notes">Notes</a> · <a href="#practice">Practice</a>
+    </p>
+    <p>© 2026 Kuldip Sarma · Bishleshon Education</p>
+  </div>
 </footer>
+
 <script>
-(function(){
-  var btn=document.getElementById('menu-btn');
-  var panel=document.getElementById('menu-panel');
-  if(btn&&panel){
-    btn.addEventListener('click',function(e){
-      e.stopPropagation();
-      var open=panel.classList.toggle('open');
-      btn.setAttribute('aria-expanded',open?'true':'false');
+/* ===================================================================
+   CONTENT DATA
+   Edit the arrays below to add real videos, notes and quiz questions.
+   =================================================================== */
+
+// ---- VIDEOS ----
+// youtubeId: the part after v= in a YouTube URL.
+const VIDEOS = [
+  { youtubeId: "9wkN7pQH3_4", title: "Latest upload", class: "11", topic: "Calculus" },
+  { youtubeId: "9wkN7pQH3_4", title: "Quadratic equations — solving by factorisation", class: "10", topic: "Algebra" },
+  { youtubeId: "9wkN7pQH3_4", title: "Pythagoras theorem — proof and applications", class: "9", topic: "Geometry" },
+  { youtubeId: "9wkN7pQH3_4", title: "Rational numbers — properties and operations", class: "8", topic: "Number Systems" },
+  { youtubeId: "9wkN7pQH3_4", title: "Trigonometric ratios — introduction", class: "10", topic: "Trigonometry" },
+  { youtubeId: "9wkN7pQH3_4", title: "Permutations and combinations — basics", class: "11", topic: "Combinatorics" },
+  // Add more rows here — same shape.
+];
+
+// ---- NOTES (PDFs) ----
+// fileUrl: point this at a PDF in your repo, e.g. "notes/class10-algebra.pdf"
+const NOTES = [
+  { class: "8", topic: "Number Systems", name: "Rational numbers — summary notes", fileUrl: "notes/class8-rational-numbers.pdf" },
+  { class: "8", topic: "Algebra", name: "Linear equations — worksheet", fileUrl: "notes/class8-linear-equations.pdf" },
+  { class: "9", topic: "Geometry", name: "Triangles — theorems and proofs", fileUrl: "notes/class9-triangles.pdf" },
+  { class: "10", topic: "Algebra", name: "Quadratic equations — full notes", fileUrl: "notes/class10-quadratic-equations.pdf" },
+  { class: "10", topic: "Trigonometry", name: "Trig ratios — formula sheet", fileUrl: "notes/class10-trig-formulas.pdf" },
+  { class: "11", topic: "Calculus", name: "Limits and derivatives — intro notes", fileUrl: "notes/class11-limits.pdf" },
+  // Add more rows here — same shape. Files that don't exist yet will still show; add the PDF to a /notes folder in the repo when ready.
+];
+
+// ---- QUIZZES ----
+// Grouped by class -> topic -> question list.
+const QUIZZES = {
+  "Class 8": {
+    "Number Systems": [
+      { q: "Which of these is a rational number?", options: ["√2", "π", "3/4", "√5"], correct: 2 },
+      { q: "The multiplicative inverse of −5/8 is:", options: ["5/8", "−8/5", "8/5", "−5/8"], correct: 1 },
+    ],
+    "Algebra": [
+      { q: "Solve: 2x + 5 = 15", options: ["x = 5", "x = 10", "x = 4", "x = 6"], correct: 0 },
+    ],
+  },
+  "Class 9": {
+    "Geometry": [
+      { q: "In a triangle, the sum of interior angles is:", options: ["90°", "180°", "270°", "360°"], correct: 1 },
+      { q: "Pythagoras theorem applies to which triangle?", options: ["Equilateral", "Right-angled", "Isosceles only", "Any triangle"], correct: 1 },
+    ],
+  },
+  "Class 10": {
+    "Algebra": [
+      { q: "The roots of x² − 5x + 6 = 0 are:", options: ["2, 3", "1, 6", "−2, −3", "2, −3"], correct: 0 },
+    ],
+    "Trigonometry": [
+      { q: "sin²θ + cos²θ = ?", options: ["0", "1", "2", "tan²θ"], correct: 1 },
+    ],
+  },
+  "Class 11": {
+    "Calculus": [
+      { q: "d/dx (x³) = ?", options: ["x²", "3x", "3x²", "x³/3"], correct: 2 },
+    ],
+    "Combinatorics": [
+      { q: "The value of 5! is:", options: ["20", "60", "120", "24"], correct: 2 },
+    ],
+  },
+};
+
+// ---- Contact channels (reuses the same numbers/emails as the main site) ----
+const WHATSAPP_NUMBER = "916002807252";
+const CONTACT_EMAIL = "kuldipsarma62@gmail.com";
+
+/* ===================================================================
+   VIDEOS: render + filter
+   =================================================================== */
+(function initVideos(){
+  const grid = document.getElementById("videoGrid");
+  const emptyNote = document.getElementById("videoEmpty");
+  const topicFilterWrap = document.getElementById("topicFilters");
+
+  const topics = [...new Set(VIDEOS.map(v => v.topic))];
+  topics.forEach(t => {
+    const btn = document.createElement("button");
+    btn.className = "chip topic";
+    btn.dataset.value = t;
+    btn.textContent = t;
+    topicFilterWrap.appendChild(btn);
+  });
+
+  let activeClass = "all";
+  let activeTopic = "all";
+
+  function playIcon(){
+    return `<svg viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="11" fill="rgba(0,0,0,.45)"/><path d="M10 8l6 4-6 4V8z"/></svg>`;
+  }
+
+  function render(){
+    grid.innerHTML = "";
+    const filtered = VIDEOS.filter(v =>
+      (activeClass === "all" || v.class === activeClass) &&
+      (activeTopic === "all" || v.topic === activeTopic)
+    );
+    emptyNote.style.display = filtered.length ? "none" : "block";
+
+    filtered.forEach(v => {
+      const card = document.createElement("div");
+      card.className = "vcard";
+      card.innerHTML = `
+        <div class="vthumb" data-yt="${v.youtubeId}">
+          <img src="https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg" alt="${v.title} thumbnail" loading="lazy">
+          <div class="play">${playIcon()}</div>
+        </div>
+        <div class="vbody">
+          <div class="vtags">
+            <span class="tag cls">Class ${v.class}</span>
+            <span class="tag topic">${v.topic}</span>
+          </div>
+          <p class="vtitle">${v.title}</p>
+        </div>`;
+      card.querySelector(".vthumb").addEventListener("click", function(){
+        this.innerHTML = `<iframe width="100%" height="100%" style="border:0;position:absolute;inset:0;"
+          src="https://www.youtube.com/embed/${v.youtubeId}?autoplay=1" title="${v.title}"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        this.style.position = "relative";
+      });
+      grid.appendChild(card);
     });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click',function(){
-        panel.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
+  }
+
+  document.getElementById("classFilters").addEventListener("click", e => {
+    if (!e.target.classList.contains("chip")) return;
+    document.querySelectorAll("#classFilters .chip").forEach(c => c.classList.remove("active"));
+    e.target.classList.add("active");
+    activeClass = e.target.dataset.value;
+    render();
+  });
+  topicFilterWrap.addEventListener("click", e => {
+    if (!e.target.classList.contains("chip")) return;
+    document.querySelectorAll("#topicFilters .chip").forEach(c => c.classList.remove("active"));
+    e.target.classList.add("active");
+    activeTopic = e.target.dataset.value;
+    render();
+  });
+
+  render();
+})();
+
+/* ===================================================================
+   NOTES: render grouped by class
+   =================================================================== */
+(function initNotes(){
+  const wrap = document.getElementById("notesGroups");
+  const classes = [...new Set(NOTES.map(n => n.class))].sort();
+
+  const folderIcon = `<svg class="note-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3l2 2h6v14a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h10z"/></svg>`;
+
+  classes.forEach(cls => {
+    const rows = NOTES.filter(n => n.class === cls);
+    const details = document.createElement("details");
+    details.className = "note-group";
+    details.open = cls === classes[0];
+    details.innerHTML = `
+      <summary>Class ${cls} <span class="chevron">›</span></summary>
+      <div class="note-rows">
+        ${rows.map(r => `
+          <div class="note-row">
+            <div class="note-left">
+              ${folderIcon}
+              <div>
+                <div class="note-name">${r.name}</div>
+                <div class="vmeta">${r.topic}</div>
+              </div>
+            </div>
+            <a class="note-download" href="${r.fileUrl}" download>Download</a>
+          </div>
+        `).join("")}
+      </div>`;
+    wrap.appendChild(details);
+  });
+})();
+
+/* ===================================================================
+   PRACTICE: quiz engine
+   =================================================================== */
+(function initQuiz(){
+  const classSelect = document.getElementById("quizClassSelect");
+  const topicSelect = document.getElementById("quizTopicSelect");
+  const box = document.getElementById("quizBox");
+
+  Object.keys(QUIZZES).forEach(cls => {
+    const opt = document.createElement("option");
+    opt.value = cls; opt.textContent = cls;
+    classSelect.appendChild(opt);
+  });
+
+  function populateTopics(){
+    topicSelect.innerHTML = "";
+    Object.keys(QUIZZES[classSelect.value]).forEach(topic => {
+      const opt = document.createElement("option");
+      opt.value = topic; opt.textContent = topic;
+      topicSelect.appendChild(opt);
+    });
+  }
+
+  let qIndex = 0, score = 0, questions = [];
+
+  function loadQuestions(){
+    questions = QUIZZES[classSelect.value][topicSelect.value] || [];
+    qIndex = 0; score = 0;
+    renderQuestion();
+  }
+
+  function renderQuestion(){
+    if (!questions.length){
+      box.innerHTML = `<p class="empty-note">No questions yet for this topic.</p>`;
+      return;
+    }
+    if (qIndex >= questions.length){
+      box.innerHTML = `
+        <p class="qtext">Done — you scored ${score} out of ${questions.length}.</p>
+        <button class="btn" id="restartQuiz">Try again</button>`;
+      document.getElementById("restartQuiz").addEventListener("click", loadQuestions);
+      return;
+    }
+    const item = questions[qIndex];
+    box.innerHTML = `
+      <div class="qnum">Question ${qIndex + 1} of ${questions.length}</div>
+      <div class="qtext">${item.q}</div>
+      <div class="qoptions">
+        ${item.options.map((o,i) => `<button class="qoption" data-i="${i}">${o}</button>`).join("")}
+      </div>
+      <div class="qfeedback" id="qfeedback"></div>
+      <div class="qfooter">
+        <span class="qscore">Score: ${score}/${qIndex}</span>
+        <button class="btn" id="nextQ" disabled>Next</button>
+      </div>`;
+
+    const optionButtons = box.querySelectorAll(".qoption");
+    const nextBtn = document.getElementById("nextQ");
+    const feedback = document.getElementById("qfeedback");
+    let answered = false;
+
+    optionButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (answered) return;
+        answered = true;
+        const chosen = Number(btn.dataset.i);
+        optionButtons.forEach(b => {
+          const i = Number(b.dataset.i);
+          if (i === item.correct) b.classList.add("correct");
+          else if (i === chosen) b.classList.add("wrong");
+        });
+        if (chosen === item.correct){
+          score++;
+          feedback.textContent = "Correct.";
+        } else {
+          feedback.textContent = `Not quite — the correct answer is "${item.options[item.correct]}".`;
+        }
+        nextBtn.disabled = false;
       });
     });
-    document.addEventListener('click',function(e){
-      if(!panel.contains(e.target)&&!btn.contains(e.target)){
-        panel.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
-    document.addEventListener('keydown',function(e){
-      if(e.key==='Escape'){
-        panel.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
+
+    nextBtn.addEventListener("click", () => { qIndex++; renderQuestion(); });
   }
-  var form=document.getElementById('admission-form');
-  var status=document.getElementById('form-status');
-  var submitBtn=document.getElementById('submit-btn');
-  if(form){
-    form.addEventListener('submit',async function(e){
-      e.preventDefault();
-      if(!form.checkValidity()){
-        status.textContent='Please fill all required fields.';
-        status.className='error';
-        form.reportValidity();
-        return;
-      }
-      submitBtn.disabled=true;
-      submitBtn.textContent='Sending...';
-      status.textContent='';
-      status.className='';
-      try{
-        var res=await fetch('https://formspree.io/f/xdeorgnk',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-        if(res.ok){
-          status.textContent="Submitted. I'll contact you within 24 hours.";
-          status.className='success';
-          form.reset();
-        }else{
-          status.textContent='Something went wrong. Please use WhatsApp instead.';
-          status.className='error';
-        }
-      }catch(err){
-        status.textContent="Couldn't send. Please use WhatsApp instead.";
-        status.className='error';
-      }
-      submitBtn.disabled=false;
-      submitBtn.textContent='Submit interest form';
-    });
+
+  classSelect.addEventListener("change", () => { populateTopics(); loadQuestions(); });
+  topicSelect.addEventListener("change", loadQuestions);
+
+  populateTopics();
+  loadQuestions();
+})();
+
+/* ===================================================================
+   DOUBTS FORM
+   =================================================================== */
+(function initDoubtForm(){
+  const form = document.getElementById("doubtForm");
+  const emailBtn = document.getElementById("sendEmailBtn");
+
+  function buildMessage(){
+    const name = document.getElementById("dName").value.trim();
+    const cls = document.getElementById("dClass").value;
+    const topic = document.getElementById("dTopic").value.trim();
+    const question = document.getElementById("dQuestion").value.trim();
+    let msg = `Hi, I have a doubt.\nName: ${name}\nClass: ${cls}`;
+    if (topic) msg += `\nTopic: ${topic}`;
+    msg += `\nQuestion: ${question}`;
+    return msg;
   }
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    if (!form.checkValidity()){ form.reportValidity(); return; }
+    const msg = buildMessage();
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+  });
+
+  emailBtn.addEventListener("click", () => {
+    if (!form.checkValidity()){ form.reportValidity(); return; }
+    const msg = buildMessage();
+    const subject = "Maths doubt — study portal";
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+  });
 })();
 </script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6aa6da89c09ef7344aef55d2/1k2dsbb43';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>
